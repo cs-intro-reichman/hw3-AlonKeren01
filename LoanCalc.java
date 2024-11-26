@@ -15,12 +15,8 @@ public class LoanCalc {
 		double loan = Double.parseDouble(args[0]);
 		double rate = Double.parseDouble(args[1]);
 		int n = Integer.parseInt(args[2]);
-		//Double payment = Double.parseDouble(args[3]);
+		System.out.println("Loan = " + loan + ", interest rate = " + rate + "%, periods = " + n);
 
-		//System.out.println("Loan = " + loan + ", interest rate = " + rate + "%, periods = " + n + ", Periodical payment: " + payment);
-		//System.out.println(endBalance(loan, rate, n, payment));
-
-		
 		// Computes the periodical payment using brute force search
 		System.out.print("\nPeriodical payment, using brute force: ");
 		System.out.println((int) bruteForceSolver(loan, rate, n, epsilon));
